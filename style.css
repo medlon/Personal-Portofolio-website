@@ -4,18 +4,36 @@ html {
     padding: 0px 0px;
     background-color: #f4f4f4;
 }
-body {
-    
+
+h2 {
+    margin-bottom: 10px;
 }
-body header {
+.Projects-container ul {
+    margin-top: 0px;
+}
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex: 1 1;  
+    
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: 3;
+
     font-size: 1.5rem;
     background-color: #ddbf67;
     color: #ffffff ;
 
-    flex: 1 1;
+}
+
+main, footer {
+    position: relative;
+    top: 90px;
 }
 
 nav ul {
@@ -30,22 +48,24 @@ nav li {
 
 nav li:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(145, 120, 19);
 }
   
 /* ---------------------------------------------------------------- */
+body {margin: 0 0;}
+
 body main {
     max-width: 70%;
     color: #333333;
-    
     margin: 0 auto;
 }
 
 .mainFlexContainer {
-    /* max-width: 60%; */
     line-height: 1.5;
     display: flex;
-    justify-content: center;
     font-size: 1.2rem;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .About-me-container {
@@ -54,10 +74,9 @@ body main {
 
 .Skills-container {
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+    flex-wrap: wrap;
+    /* line-height: 10px; */
 }
 
 .Skills-container i, .Skills-container img {
@@ -68,19 +87,34 @@ body main {
     padding: 10px 18px;
 }
 
+.Skills ul {
+    margin-top: 0px;
+}
+.Skills h4 {
+    margin-bottom: 5px;
+}
+
 .size-down {
     width: 2.5vw;
     
 }
+
 /* ---------------------------------------------------------------- */
-body footer {
+footer {
     position: relative;
-    /* left: 35%; */
     bottom: 5%;
+    left: 0%;
+    height: 60px;
     background-color: #333333;
     color: #ffffff;
-}
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red {
+    color: red;
+}
 .boldClass {
     font-weight: bold;
 }
